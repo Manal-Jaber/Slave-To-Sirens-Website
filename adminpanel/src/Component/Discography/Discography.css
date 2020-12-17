@@ -1,0 +1,56 @@
+.title-bar{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    font-size: 2vw;
+}
+.add-form{
+    display: grid;
+    grid-template-columns: 32% 32% 32% 4%;
+    border: solid;
+    border-color:black;
+    border-radius: 10px;
+    border-width: thin;
+    margin: 2%;
+    padding-right: 0.5%;
+}
+.textArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.body{
+    border: solid;
+    border-color:black;
+    border-width: thin;
+    border-radius: 10px;
+    margin: 2%;
+}
+.body-list{
+    display: grid;
+    grid-template-columns: 32% 32% 32% 4%;
+    margin: 1%;
+}
+.body-modify{
+    display: grid;
+    grid-template-columns: 32% 32% 32% 4%;
+    margin: 1%;
+}
+.admin-discography label{
+    align-self: center;
+ }
+ .admin-discography ul{
+    list-style-type: none;
+    padding: 0;
+}
+.admin-discography h1{
+    margin: 1%;
+}
+.admin-discography textarea{
+    width: 100%;
+}
+.admin-discography input{
+    width: 100%;
+    margin-top: 5%;
+}

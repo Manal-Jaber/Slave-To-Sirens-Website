@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal&family=Nerko+One&display=swap');
+
+*{
+  font-family: 'Metal', cursive;
+}
+
+
+/*          Navigation                */
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navigation  li {
+    float: left;
+    border-right:1px solid #bbb;
+    width: 10.9%;
+  }
+  
+  .navigation li:last-child {
+    border-right: none;
+  }
+  
+  li .nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 9px;
+    text-decoration: none;
+    font-size: 17.9px;
+  }
+  
+  .navigation li a:hover{
+    background-color: #111;
+  }
+
+
+/*            Body                   */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 20vh;
+    z-index: 1;
+}
+
+
+button{
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 5%;
+    background-color: #333;
+    color: white;
+}
+.name{
+    margin-bottom: 3px;
+}
+
+div{
+    text-align: center;
+}
+
+
+.Creat{
+    background-color:whitesmoke;
+}
+
+.section {
+    border: 4px black double;
+    border-radius: 5%;
+    background-color:#333333a6;
+    position: relative;
+    bottom: 5vh;
+    margin-bottom: 10px;
+}
+
+.position_section{
+    margin: 5% 0 ;
+}
+
+
+p{
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+h1{
+    color: red;
+}
+
+[type = "text"] , [type = "url"] , [type = "date"]{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 2%;
+    margin-bottom: 10px;
+}
+
+textarea{
+    border-radius: 2%;
+}
+
+
+/*                        FileUpload                      */
+
+img{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.progessBar{
+  height: 1rem;
+  width: 0%;
+  background-color: #333;
+  color: white;
+  padding:2px
+}
+
+[type = "file"]{
+  margin: 15px 0 10px 0 ;
+}
+
+.section_raduis{
+  border-radius: 1%;
+}
+
+img{
+  width: 50%;
+  height: auto;
+  margin:25px 0 ;
+}
+
+fieldset{
+  width: 70%;
+  margin: 0 auto 20px auto;
+
+}
+
+.bm-menu{
+  display: none;
+}
+
+.bm-overlay , .bm-menu-wrap , #react-burger-menu-btn{
+  display: none ;
+}
+
+
+
+@media only screen and (max-width:480px){
+ .section{
+  width: 99vw;
+ }
+
+ .App , form{
+   overflow: hidden;
+ }
+
+ h1{
+   font-size: 9vw;
+ }
+
+ /*    Navigation   */
+
+ .navigation ul{
+   display: none  ;
+ }
+ .container{
+  position: relative;
+  top: 46px;
+ }
+
+/* ...........  Responsive *Mobile* ...........*/
+
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    top: 1.8%;
+    left: 2%;
+  }
+
+  div div.bm-menu-wrap {
+    min-width: 100%;
+  }
+
+  .bm-burger-button {
+    background: transparent;
+    border: transparent;
+    -webkit-animation: spin 0s linear infinite;
+    -moz-animation: spin 0s linear infinite;
+    animation: spin 0s linear infinite;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    border-radius: 0;
+  }
+
+  .bm-burger-button:hover {
+    -webkit-animation: spin 0s linear infinite;
+    -moz-animation: spin 0s linear infinite;
+    animation: spin 0s linear infinite;
+    border: transparent;
+  }
+
+  .bm-burger-button span {
+    visibility: visible;
+  }
+
+  .bm-item {
+    line-height: 1.7 !important;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+  }
+
+  .bm-burger-bars {
+    background: black;
+    border: 1px black solid;
+    padding: 3% 0 7% 0;
+  }
+  .bm-menu {
+    padding: 2.5em 8em 0;
+    background-color: #7a7a7a;
+    overflow: hidden;
+  }
+
+  #react-burger-cross-btn{
+    position: relative;
+    top: 20px;
+  }
+  .bm-cross{
+    background-color: black;
+  }
+  
+  .bm-menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .bm-menu{
+    display: block;
+  }
+  .section{
+    position: relative;
+    bottom: 8vh;
+    margin-bottom: 10px;
+  }
+
+  .section > p > img{
+    width: 75%;
+  }
+
+  .bm-overlay , .bm-menu-wrap , #react-burger-menu-btn{
+    display: block;
+  }
+  
+}

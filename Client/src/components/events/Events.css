@@ -1,0 +1,240 @@
+.overall{
+  display: grid;
+  grid-template-columns: 1fr 40%;
+}
+
+.imageEvents{
+  overflow: hidden;
+}
+
+.imageEvents > img{
+  width: 50%;
+  overflow: hidden;
+}
+
+.imagecontainer > .imageEvents:nth-child(1){
+  width: 100%;
+  transform:rotate(16deg);
+  margin-left: 28px;
+  /* overflow: hidden; */
+ position: relative;
+ top: 7%;
+}
+
+
+.imagecontainer > .imageEvents:nth-child(2){
+  margin-left: 40%;
+  width: 100%;
+  transform: rotate3d(1, 1, 1, -30deg);
+  /* overflow: hidden; */
+}
+
+
+
+.imagecontainer > .imageEvents:nth-child(1):hover{
+  transform: scale(1.2);
+  transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  -webkit-transition: all 1s ease-in-out 0s;
+  -o-transition: all 1s ease-in-out 0s;
+  position: relative;
+  left: 10%;
+  z-index: 1
+}
+
+.imagecontainer > .imageEvents:nth-child(2):hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  -webkit-transition: all 1s ease-in-out 0s;
+  -o-transition: all 1s ease-in-out 0s;
+}
+
+.imagecontainer > .imageEvents:nth-child(3):hover{
+  transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  -webkit-transition: all 1s ease-in-out 0s;
+  -o-transition: all 1s ease-in-out 0s;
+  transform: scale(1.2);
+  position: relative;
+  left: 10%;
+  margin-bottom: 10%;
+}
+
+
+a > .spin{
+  font-size: 22px;
+}
+
+a > .position-text{
+  font-size: 18px;
+ 
+}
+
+a > .date{
+  font-size: 15px;
+  
+}
+
+.position-text,
+.date {
+  margin-left: 35px;
+}
+
+ul {
+  padding-left: 10%;
+  text-align: left;
+  list-style-type: none;
+  line-height: 2;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:hover , a:hover{
+  color: red;
+}
+
+a{
+  text-decoration: none;
+}
+
+.Events-header h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+
+
+.spin::before {
+  content: "☣";
+  font-style: normal;
+  font-size: 1.2em;
+  -webkit-animation: spin 10s linear infinite alternate;
+  -moz-animation: spin 10s linear infinite alternate;
+  animation: spin 10s linear infinite alternate;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    color: red;
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(-360deg);
+    color: red;
+  }
+}
+
+.upcoming{
+  text-align: center;
+  color:white;
+  margin-top :20px;
+  }
+
+.spin{
+  font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  
+  .overall{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    margin-top: 15px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  ul li a {
+    font-size: 17px;
+  }
+
+  li {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .position-text,
+  .date {
+    margin-left: 0;
+  }
+
+  .Events-header h1 {
+    font-size: 8vw;
+    margin-top: 0;
+  }
+  .Events-header {
+    padding-top: 20px;
+  }
+
+
+  .imagecontainer > .imageEvents:nth-child(1) {
+    width: 100%;
+    transform:unset;
+   padding-left: 14%;
+   position: static;
+   margin-bottom: 5%;
+  }
+
+  .imagecontainer > .imageEvents:nth-child(3){
+    width: 100%;
+    transform:unset;
+   position: static;
+   margin-bottom: 5%;
+   margin-left: 15%;
+  }
+
+
+  .imagecontainer > .imageEvents:nth-child(2){
+    transform: unset;
+    margin-bottom: 5%;
+    margin-left: 16.5%;
+  } 
+
+
+  .imagecontainer > .imageEvents:nth-child(1):hover , .imagecontainer > .imageEvents:nth-child(3):hover{
+    transition: unset;
+    transform: scale(1.1);
+    position: static;
+  }
+
+  /* .imagecontainer > .imageEvents:nth-child(3):hover{
+    margin-bottom: 10px;
+  }
+   */
+  .imagecontainer > .imageEvents:nth-child(2):hover {
+    width: 100%;
+    transform:scale(1.1);
+    transition: unset;
+    position: static;
+  }
+  
+  .imageEvents > img {
+    width: 70%;
+    overflow: hidden;
+  }
+}
